@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal de Guerre - Médecine 14-18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="saveBtn">💾 Sauvegarder</button>
+        <button id="presentationBtn">🎬 Mode Présentation</button>
+        <button id="addSlideBtn">📄 Ajouter une page</button>
+        <span class="slide-counter">Slide <span id="currentSlideNum">1</span> / <span id="totalSlidesNum">30</span></span>
+        <div class="nav-buttons">
+            <button id="prevBtn">◀ Page précédente</button>
+            <button id="nextBtn">Page suivante ▶</button>
+        </div>
+    </div>
 
+    <div id="presentationOverlay" style="display: none;">
+        <button id="exitPresentation">✖ Quitter</button>
+        <div id="presentationSlide"></div>
+    </div>
+
+    <div id="slidesContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
